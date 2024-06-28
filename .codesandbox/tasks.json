@@ -1,0 +1,93 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "clean": {
+      "name": "clean",
+      "command": "yarn clean",
+      "runAtStart": false
+    },
+    "prebuild": {
+      "name": "prebuild",
+      "command": "yarn prebuild",
+      "runAtStart": false
+    },
+    "build:watch": {
+      "name": "build:watch",
+      "command": "yarn build:watch",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "postbuild": {
+      "name": "postbuild",
+      "command": "yarn postbuild",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint",
+      "runAtStart": false
+    },
+    "lint:prettier": {
+      "name": "lint:prettier",
+      "command": "yarn lint:prettier",
+      "runAtStart": false
+    },
+    "lint:eslint": {
+      "name": "lint:eslint",
+      "command": "yarn lint:eslint",
+      "runAtStart": false
+    },
+    "fix": {
+      "name": "fix",
+      "command": "yarn fix",
+      "runAtStart": false
+    },
+    "fix:prettier": {
+      "name": "fix:prettier",
+      "command": "yarn fix:prettier",
+      "runAtStart": false
+    },
+    "fix:eslint": {
+      "name": "fix:eslint",
+      "command": "yarn fix:eslint",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "try": {
+      "name": "try",
+      "command": "yarn try",
+      "runAtStart": false
+    },
+    "try:uninstall": {
+      "name": "try:uninstall",
+      "command": "yarn try:uninstall",
+      "runAtStart": false
+    },
+    "test:watch": {
+      "name": "test:watch",
+      "command": "yarn test:watch",
+      "runAtStart": false
+    },
+    "npm install -g @sentry/wizard # or yarn global add @sentry/wizard  sentry-wizard": {
+      "name": "npm install -g @sentry/wizard # or yarn global add @sentry/wizard  sentry-wizard",
+      "command": "npm install -g @sentry/wizard # or yarn global add @sentry/wizard  sentry-wizard",
+      "runAtStart": true
+    }
+  }
+}
